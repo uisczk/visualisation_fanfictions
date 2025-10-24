@@ -1,8 +1,8 @@
 # Environnement statistiques - projet données comme écosystème >> modélisation 
 
 ## SOURCES DE DONNÉES (DATA BRUTES)
-voir : AO3 STATISTIQUES MEMOIRE FINAL M1
-
+voir : https://docs.google.com/spreadsheets/d/e/2PACX-1vQms8YIvb4HiOzFRVjG8fTAl8wuB-EFODaPEvb2vbdtKsP0fb6w-MSP-t5aXh06IgPoRe0ub5Tqgly3/pubhtml
+> page CORR 2013, CORR 2017, CORR 2023, sorted:HITS, tag:PAINTING, tag:ART, tag:MUSEUMS
 
 ## DATA TABLES
 pb javascript
@@ -13,12 +13,12 @@ canva - visualisation données sur interface web
 ## REPRÉSENTATIONS DE DONNÉES
 mémoire : réf. HAYLES, MORETTI + d3
 
-  collapsible tree
+  habituels (pie chart, scatterplot, bars) > voir : charts dans pages > https://docs.google.com/spreadsheets/d/e/2PACX-1vQms8YIvb4HiOzFRVjG8fTAl8wuB-EFODaPEvb2vbdtKsP0fb6w-MSP-t5aXh06IgPoRe0ub5Tqgly3/pubhtml.
+  
+  collapsible tree : 
   
   connected scatterplot
-  
-  habituels (pie chart, scatterplot, bars)
-  
+    
   parallel sets
   
   force directed diagram
