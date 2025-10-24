@@ -2,8 +2,8 @@
 classDiagram
     Acteur <|-- Auteur
     Acteur <|-- Lecteur
-    Acteur <|-- Plateforme_archives_corpusEtendu
-    Acteur : +langue, langues principales : expression ou favorisée
+    Acteur <|-- Plateforme_archives
+    Acteur : +langue, langues principales, langue expression
     Acteur : +période activité [années]
     Acteur : +peut interagir sur plateforme()
     Acteur : +a accès au texte()
@@ -14,15 +14,16 @@ classDiagram
     }
     class Lecteur{
       +tags et paradonnées favorisées
-      +lit les textes > incidence sur score des textes : hits, kudos()
+      +lit les textes > incidence sur score des textes()
       +favorise des textes selon les paradonnées et tags()
     }
-    class Plateforme_archives_corpusEtendu{
+    class Plateforme_archives{
       +ensemble des langues
       +ensemble des paradonnées et tags
       +nombre de textes hébergés
       +héberge les textes()
       +donne accès aux textes aux utilisateurs()
-      +discrimine par mots-clefs et catégories : fandoms, avertissements, etc()
+      +discrimine textes selon catégories, avertissements, etc()
     }
 
+    
