@@ -4,7 +4,7 @@ classDiagram
     Acteur <|-- Lecteur
     Acteur <|-- Plateforme_archives_corpusEtendu
     Acteur : +String langue, langues principales, langue expression
-    Acteur : +int période activité [années]
+    Acteur : +période activité
     Acteur : +peut interagir sur plateforme()
     Acteur : +a accès au texte()
     class Auteur{
