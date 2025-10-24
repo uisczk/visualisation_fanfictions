@@ -2,25 +2,25 @@
 classDiagram
     Acteur <|-- Auteur
     Acteur <|-- Lecteur
-    Acteur <|-- Plateforme_archives
+    Acteur <|-- Plateforme_archives_corpusEtendu
     Acteur : +langue, langues principales, langue expression
     Acteur : +période activité [années]
     Acteur : +peut interagir sur plateforme()
     Acteur : +a accès au texte()
     class Auteur{
-      +nombre de textes publiés
+      +int de textes publiés
       +écrit et édite le texte()
       +écrit et édite les paradonnées et tags()
     }
     class Lecteur{
-      +tags et paradonnées favorisées
+      +String tags et paradonnées favorisées
       +lit les textes > incidence sur score des textes()
       +favorise des textes selon les paradonnées et tags()
     }
-    class Plateforme_archives{
-      +ensemble des langues
-      +ensemble des paradonnées et tags
-      +nombre de textes hébergés
+    class Plateforme_archives_corpusEtendu{
+      +String ensemble des langues
+      +String ensemble des paradonnées et tags
+      +int de textes hébergés
       +héberge les textes()
       +donne accès aux textes aux utilisateurs()
       +discrimine textes selon catégories, avertissements, etc()
