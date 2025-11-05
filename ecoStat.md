@@ -7,19 +7,13 @@ Données collectées dans le cadre du M1 : paradonnées des documents du corpus,
 
 <ins>Extrait</ins> du tableau de données page tag:MUSEUMS :
 | title | author	| posted | language | words | hits | kudos | category | warning | rating | fandom	|
-| ---------------- | ------------- | -------- | -------- | ------ | ------ | ------ | ------ | ------------ | ------- | -------- |
-Brûlons Florence.	Smokedandelions	22/11/2021	Français	4301	279	13	M/M	Choose Not To Use Archive Warnings	Teen And Up Audiences	Complete Work	Hannibal (TV)	Will Graham/Hannibal Lecter													
-5
-	Dangerous Criminal Love	KiriAsakura	30/12/2020	Español	59662	1050	38	M/M	Graphic Depictions Of Violence, Rape/Non-Con	Explicit	Work in Progress	Hannibal (TV)
-  Legame	donutgladiator	25/03/2021	Italiano	793	68	3	M/M	No Archive Warnings Apply	General Audiences	Complete Work	Hannibal (TV)	Will Graham/Hannibal Lecter													
-11
-	living statue	shycap	04/02/2022	English	1672	723	104	M/M	No Archive Warnings Apply	General Audiences	Complete Work	Hannibal (TV)	Will Graham/Hannibal Lecter													
-12
-	Lord director	Joseph_Amadeus	07/08/2021	English	4090	3323	303	M/M	No Archive Warnings Apply	Teen And Up Audiences	Complete Work	Hannibal (TV)	Will Graham/Hannibal Lecter													
-13
-	Museums Incite Riots	blueboxesinmaryland (demoncard)	16/09/2014	English	1104	3062	181	M/M	No Archive Warnings Apply	Not Rated	Complete Work	Hannibal (TV)
-
-
+| ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- | ---------- |
+| Brûlons Florence.	| Smokedandelions |	22/11/2021	| Français	| 4301	| 279	| 13 |	M/M | Choose Not To Use Archive Warnings	| Teen And Up Audiences	| Hannibal (TV) |								
+| Dangerous Criminal Love	| KiriAsakura	| 30/12/2020	| Español	| 59662	| 1050	| 38	| M/M	| Graphic Depictions Of Violence, Rape/Non-Con	| Explicit	| Hannibal (TV) |
+| Legame	| donutgladiator	| 25/03/2021	| Italiano	| 793	| 68	| 3	| M/M	| No Archive Warnings Apply	| General Audiences	| Hannibal (TV)	|												
+| living statue	| shycap	| 04/02/2022	| English	| 1672	| 723	| 104	| M/M	| No Archive Warnings Apply	| General Audiences	| Hannibal (TV)	|
+| Lord director	| Joseph_Amadeus	| 07/08/2021	| English	| 4090	| 3323	| 303	| M/M	| No Archive Warnings | Apply	Teen And Up Audiences	| Hannibal (TV)	|
+| Museums Incite Riots	| blueboxesinmaryland (demoncard)	| 16/09/2014	| English	| 1104	| 3062	| 181	| M/M	| No Archive Warnings Apply	| Not Rated	| Hannibal (TV) |
 
 ## DATA TABLES
 Renvoyer au fichier (*[ibid.](https://docs.google.com/spreadsheets/d/e/2PACX-1vREmUfEGdbl9OCKm1iCf4wxcxwLf8Wagq7iYsRuPtcVX7AApNE42sZ0qr__2sN_8hEG_sLXaNu2MG3M/pubhtml)*).
