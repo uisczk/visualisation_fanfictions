@@ -14,25 +14,21 @@
     ArchiveOfOurOwn_AO3 <|-- Fanfictions
     Fanfictions <|-- CorpusEtendu
     Fanfictions <|-- CorpusRestreint
-    Fanfictions o-- Lecteur
-    Fanfictions --o Auteur
-    ArchiveOfOurOwn_AO3 o--o Benevole
-    ArchiveOfOurOwn_AO3 o--o Auteur
     Agent : +langue
     Agent : +periodeActivite
     Agent : +accedeFanfictions()
     Agent : +existe()
     class ProducteursMediatique{
-        +createurs
-        +diffuseurs
+        +createurs:str
+        +diffuseurs:str
         +auctorialite
         +determinentCanon()
         +ontDroitsAuteur()
         +peuventPoursuivreAO3()
     }    
     class ProductionMediatique{
-        +objetMediatiqueSource
-        +personnages
+        +objetMediatiqueSource:str
+        +personnages:str
         +canon
         +estProduite()
         +estDiffusee()
@@ -44,40 +40,41 @@
         +produit()
     }
     class Utilisateur{
-        +genre
-        +age
-        +race
-        +orientationSexuelle
-        +region
-        +membreFandom
+        +genre:str
+        +age:int
+        +race:str
+        +orientationSexuelle:str
+        +region:str
+        +membreFandom:str
         +accedeInterface()
         +estHumain()
         +estFan
         +contestePolicyOTW()
     }
     class AcafanChercheur{
-        +affilitationAcademique
+        +affilitationAcademique:str
         +produitRecherche()
     }
     class Lecteur{
-        +fanfictionsBookmarked
+        +fanfictionsBookmarked:int
         +commenteFanfictions()
+        +bookmarkeFanfictions()
         +selectionneFanfictions()
         +filtreFanfictions()
         +filtreTags()
     }
     class Auteur{
-        +pseudonyme
-        +fanfictionsPubliees
+        +pseudonyme:str
+        +fanfictionsPubliees:int
         +ecritFanfictions()
         +publieFanfictions()
         +editeFanfictions()
         +editeTags()
     }
     class Benevole {
-        +pseudonyme
-        +fonction
-        +statut
+        +pseudonyme:str
+        +fonction:str
+        +statut:str
         +accedeCodeSource()
         +editeTags()
         +trieTags()
@@ -89,28 +86,29 @@
         +fondeProjets[5]()
     }
     class ArchiveOfOurOwn_AO3{
-        +nombreFanfictions
+        +nombreFanfictions:int
         +hebergeFanfictions()
         +proposeTags()
     }
     class Comite{
-        +membres
-        +policy
+        +membres:int
+        +policy:str
         +decideProjets()
+        +determinePolicy()
         +assureContinuite()
     }
     class Fanfictions{
-        +mots
-        +hits
-        +kudos
-        +bookmarks
-        +auteur
-        +commentaires
-        +tags
-        +avertissements
-        +categories
-        +classification
-        +chapitres
+        +mots:int
+        +hits:int
+        +kudos:int
+        +bookmarks:int
+        +auteur:str
+        +commentaires:int
+        +tags:str
+        +avertissements:str
+        +categories:str
+        +classification:str
+        +chapitres:int
         +estEcrite()
         +estPubliee()
         +estAccessible()
@@ -119,17 +117,17 @@
         +estBookmarked()
     }
     class CorpusEtendu{
-        +moyenneMots
-        +moyenneKudos
-        +moyenneHits
-        +partClassifications[5]
-        +partCategories
+        +moyenneMots:int
+        +moyenneKudos:int
+        +moyenneHits:int
+        +partClassifications[5]:int
+        +partCategories[6]:int
     }
     class CorpusRestreint{
-        +nombreFanfictions
-        +moyenneMots
-        +moyenneKudos
-        +moyenneHits
-        +partClassifications[5]
-        +partCategories
+        +nombreFanfictions:int
+        +moyenneMots:int
+        +moyenneKudos:int
+        +moyenneHits:int
+        +partClassifications[5]:int
+        +partCategories[6]:int
     }
