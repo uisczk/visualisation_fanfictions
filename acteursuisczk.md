@@ -14,8 +14,7 @@
     ArchiveOfOurOwn_AO3 <|-- Fanfictions
     Fanfictions <|-- CorpusEtendu
     Fanfictions <|-- CorpusRestreint
-    Agent : +langue
-    Agent : +periodeActivite
+    Agent : +langue:str
     Agent : +accedeFanfictions()
     Agent : +existe()
     class ProducteursMediatique{
@@ -57,6 +56,7 @@
     }
     class Lecteur{
         +fanfictionsBookmarked:int
+        +periodeActivite:date
         +commenteFanfictions()
         +bookmarkeFanfictions()
         +selectionneFanfictions()
@@ -65,7 +65,8 @@
     }
     class Auteur{
         +pseudonyme:str
-        +fanfictionsPubliees:int
+        +periodeActivite:date
+        +aCommeFanfictions:int
         +ecritFanfictions()
         +publieFanfictions()
         +editeFanfictions()
@@ -75,6 +76,7 @@
         +pseudonyme:str
         +fonction:str
         +statut:str
+        +periodeActivite:date
         +accedeCodeSource()
         +editeTags()
         +trieTags()
