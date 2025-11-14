@@ -1,57 +1,61 @@
 ```mermaid
   classDiagram
-    Agent <|-- ProducteursMediatique
-    Agent <|-- Grassroots
     ProducteursMediatique <|-- ProductionMediatique
-    Grassroots <|-- Utilisateur
-    Grassroots <|-- OrganizationForTransformativeWorks_OTW
-    Utilisateur <|-- AcafanChercheur
-    Utilisateur <|-- Lecteur
-    Utilisateur <|-- Auteur
-    Utilisateur <|-- Benevole
+    ProducteursMediatique <|-- MembresProduction
+    Utilisateur_AO3 <|-- AcafanChercheur
+    Utilisateur_AO3 <|-- Lecteur
+    Utilisateur_AO3 <|-- Auteur
+    Utilisateur_AO3 <|-- Benevole
     OrganizationForTransformativeWorks_OTW <|-- ArchiveOfOurOwn_AO3
     OrganizationForTransformativeWorks_OTW <|-- Comite
     ArchiveOfOurOwn_AO3 <|-- Fanfictions
     Fanfictions <|-- CorpusEtendu
     Fanfictions <|-- CorpusRestreint
-    Agent : +langue:str
-    Agent : +accedeFanfictions()
-    Agent : +existe()
+    ProductionMediatique o--o Utilisateur_AO3    
+    ProductionMediatique o--o Fanfictions
+    ProductionMediatique o-- Auteur
+    ArchiveOfOurOwn_AO3 o-- Auteur
+    ArchiveOfOurOwn_AO3 o-- Benevole
+    Auteur o-- Fanfictions
+    MembresProduction o-- Fanfictions
+
     class ProducteursMediatique{
         +createurs:str
         +diffuseurs:str
-        +auctorialite
         +determinentCanon()
         +ontDroitsAuteur()
         +peuventPoursuivreAO3()
     }    
     class ProductionMediatique{
+        +langue:str
         +objetMediatiqueSource:str
         +personnages:str
-        +canon
+        +estCanon()
         +estProduite()
         +estDiffusee()
         +estTransformableDerivable()
     }
-    class Grassroots{
-        +contribueFandoms()
-        +estIndependant()
-        +produit()
-    }
-    class Utilisateur{
+class MembresProduction{
+	      +region:str
+	      +membreFandom:str
+        +estHumain()
+        +travaille()
+      	+peutProduireFanfictions()
+    }    
+    class Utilisateur_AO3{
         +genre:str
-        +age:int
         +race:str
         +orientationSexuelle:str
         +region:str
         +membreFandom:str
-        +accedeInterface()
+        +accedeInterfaceAO3()
         +estHumain()
         +estFan
         +contestePolicyOTW()
     }
     class AcafanChercheur{
         +affilitationAcademique:str
+	      +langue:str
         +produitRecherche()
     }
     class Lecteur{
@@ -67,6 +71,8 @@
         +pseudonyme:str
         +periodeActivite:date
         +aCommeFanfictions:int
+      	+langue:str
+      	+transformeCanon()
         +ecritFanfictions()
         +publieFanfictions()
         +editeFanfictions()
@@ -100,7 +106,8 @@
         +assureContinuite()
     }
     class Fanfictions{
-        +mots:int
+        +langue:str
+      	+mots:int
         +hits:int
         +kudos:int
         +bookmarks:int
@@ -110,7 +117,7 @@
         +avertissements:str
         +categories:str
         +classification:str
-        +chapitres:int
+        +chapitres:int-
         +estEcrite()
         +estPubliee()
         +estAccessible()
