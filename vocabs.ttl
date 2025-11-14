@@ -1,0 +1,184 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ff: <https://github.com/uisczk/visualisation_fanfictions/ff#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+
+<https://github.com/uisczk/visualisation_fanfictions/ff#> a owl:Ontology ;
+    dcterms:title "Visualisation de fanfictions" .
+
+ff:SemanticPosition a rdfs:Class ;
+    rdfs:label "SemanticPosition" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:Crible a rdfs:Class ;
+    rdfs:label "Crible" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:CriblePosition a rdfs:Class ;
+    rdfs:label "CriblePosition" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:CribleCarto a rdfs:Class ;
+    rdfs:label "Cartographie d'un crible" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:Actant a rdfs:Class ;
+    rdfs:label "Actant" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:Existence a rdfs:Class ;
+    rdfs:label "Existence" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:Physique a rdfs:Class ;
+    rdfs:label "Physique" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:Rapport a rdfs:Class ;
+    rdfs:label "Rapport" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:Archetype a rdfs:Class ;
+    rdfs:label "Archetype" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+
+ff:Concept a rdfs:Class ;
+    rdfs:label "Concept" ;
+    rdfs:domain o:Resource ;
+    owl:sameAs skos:Concept;
+    vs:term_status "experimental" .
+
+ff:x a rdf:Property ;
+    rdfs:label "x" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:y a rdf:Property ;
+    rdfs:label "y" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:xRatingValue a rdf:Property ;
+    rdfs:label "xRatingValue" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:yRatingValue a rdf:Property ;
+    rdfs:label "yRatingValue" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:degradName a rdf:Property ;
+    rdfs:label "degradName" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:degradColors a rdf:Property ;
+    rdfs:label "degradColors" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:creationDate a rdf:Property ;
+    rdfs:label "creationDate" ;
+    rdfs:domain o:Resource .
+
+ff:hasExistence a rdf:Property ;
+    rdfs:label "a comme existence" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:hasActant a rdf:Property ;
+    rdfs:label "a comme actant" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:hasPhysique a rdf:Property ;
+    rdfs:label "a comme physique" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:hasConcept a rdf:Property ;
+    rdfs:label "a comme concept" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:hasRapport a rdf:Property ;
+    rdfs:label "a comme rapport" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:hasCrible a rdf:Property ;
+    rdfs:label "a comme crible" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:cribleLabel a rdf:Property ;
+    rdfs:label "cribleLabel" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:cribleId a rdf:Property ;
+    rdfs:label "cribleId" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:cribleRatingValue a rdf:Property ;
+    rdfs:label "cribleRatingValue" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:distanceCenter a rdf:Property ;
+    rdfs:label "distance du centre" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:distanceConcept a rdf:Property ;
+    rdfs:label "distance du concept" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:ordreCrible a rdf:Property ;
+    rdfs:label "Ordre dans le crible" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:hasCribleCarto a rdf:Property ;
+    rdfs:label "a comme cartographie" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:hasSujet a rdf:Property ;
+    rdfs:label "a comme sujet" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+ff:hasObjet a rdf:Property ;
+    rdfs:label "a comme objet" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+ff:hasPredicat a rdf:Property ;
+    rdfs:label "a comme prédicat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+ff:hasMenu a rdf:Property ;
+    rdfs:label "a comme menu" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+ff:hasArchetype a rdf:Property ;
+    rdfs:label "a comme archetype" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
