@@ -92,8 +92,8 @@ ff:PeriodeActivite a rdf:Property ;
     rdfs:label "Période d'activité" ;
     rdfs:domain o:Resource.
 
-ff:EcritPar a rdf:Property ;
-    rdfs:label "est écrite par" ;
+ff:Auteurice a rdf:Property ;
+    rdfs:label "Auteurice" ;
     rdfs:domain o:Resource.
 
 ff:NombreMots a rdf:Property ;
@@ -111,3 +111,40 @@ ff:NombreKudos a rdf:Property ;
 ff:Tags a rdf:Property ;
     rdfs:label "Tags" ;
     rdfs:domain o:Resource.
+
+ff:Avertissement a rdf:Property ;
+    rdfs:label "Avertissement" ;
+    rdfs:domain o:Resource.
+
+ff:Categorie a rdf:Property ;
+    rdfs:label "Catégorie" ;
+    rdfs:domain o:Resource.
+
+ff:Classification a rdf:Property ;
+    rdfs:label "Classification" ;
+    rdfs:domain o:Resource.
+
+ff:TagMuseum a rdf:Property ;
+    rdfs:label "Tag:MUSEUM" ;
+    rdfs:domain o:Resource.
+
+ff:TagArt a rdf:Property ;
+    rdfs:label "Tag:ART" ;
+    rdfs:domain o:Resource.
+
+ff:TagPainting a rdf:Property ;
+    rdfs:label "Tag:PAINTING" ;
+    rdfs:domain o:Resource.
+
+ff:ObjetMediatiqueSource a rdf:Property ;
+    rdfs:label "Objet médiatique source (dérive de)" ;
+    rdfs:domain o:Resource.
+
+ff:TagArt a rdf:Property ;
+    rdfs:label "Tag:ART" ;
+    rdfs:domain o:Resource.
+
+ff:Personnages a rdf:Property ;
+    rdfs:label "Personnage" ;
+    rdfs:domain o:Resource.
+
