@@ -7,6 +7,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix ff: <https://github.com/uisczk/visualisation_fanfictions/ff#> .
 @prefix ma: <http://www.w3.org/ns/ma-ont#>.
+@prefix bg: <http://contextus.net/ontology/ontomedia/ext/common/being#>.
+@prefix omc: <http://contextus.net/ontology/ontomedia/core/expression#>.
+@prefix po: <http://purl.org/ontology/po/>.
+@prefix vir: <http://w3id.org/vir#>.
 
 <https://github.com/uisczk/visualisation_fanfictions/ff#> a owl:Ontology ;
     dcterms:title "Visualisation de fanfictions" .
