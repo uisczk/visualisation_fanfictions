@@ -80,6 +80,34 @@ ff:Langue a rdf:Property ;
     rdfs:label "Langue" ;
     rdfs:domain o:Resource.
 
-ff:AffiliationAcademique a rdf:Property ;
-    rdfs:label "Affiliation académique" ;
+ff:ProtectionJuridique a rdf:Property ;
+    rdfs:label "Protection juridique" ;
+    rdfs:domain o:Resource.
+
+ff:MembreFandom a rdf:Property ;
+    rdfs:label "Membre d'un fandom" ;
+    rdfs:domain o:Resource.
+
+ff:PeriodeActivite a rdf:Property ;
+    rdfs:label "Période d'activité" ;
+    rdfs:domain o:Resource.
+
+ff:EcritPar a rdf:Property ;
+    rdfs:label "est écrite par" ;
+    rdfs:domain o:Resource.
+
+ff:NombreMots a rdf:Property ;
+    rdfs:label "Nombre de mots" ;
+    rdfs:domain o:Resource.
+
+ff:NombreHits a rdf:Property ;
+    rdfs:label "Nombre de hits" ;
+    rdfs:domain o:Resource.
+
+ff:NombreKudos a rdf:Property ;
+    rdfs:label "Nombre de kudos" ;
+    rdfs:domain o:Resource.
+
+ff:Tags a rdf:Property ;
+    rdfs:label "Tags" ;
     rdfs:domain o:Resource.
