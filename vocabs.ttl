@@ -11,56 +11,74 @@
 <https://github.com/uisczk/visualisation_fanfictions/ff#> a owl:Ontology ;
     dcterms:title "Visualisation de fanfictions" .
 
-ff:SemanticPosition a rdfs:Class ;
-    rdfs:label "SemanticPosition" ;
+ff:ProducteursMediatique a rdfs:Class ;
+    rdfs:label "ProducteursMediatique" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:Crible a rdfs:Class ;
-    rdfs:label "Crible" ;
+ff:Utilisateur_AO3 a rdfs:Class ;
+    rdfs:label "Utilisateur_AO3" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:CriblePosition a rdfs:Class ;
-    rdfs:label "CriblePosition" ;
+ff:OrganizationForTransformativeWorks_OTW a rdfs:Class ;
+    rdfs:label "OrganizationForTransformativeWorks_OTW" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:CribleCarto a rdfs:Class ;
-    rdfs:label "Cartographie d'un crible" ;
+ff:ArchiveOfOurOwn_AO3 a rdfs:Class ;
+    rdfs:label "Cartographie d'un Utilisateur_AO3" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:Actant a rdfs:Class ;
-    rdfs:label "Actant" ;
+ff:Fanfictions a rdfs:Class ;
+    rdfs:label "Fanfictions" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:Existence a rdfs:Class ;
-    rdfs:label "Existence" ;
+ff:ProductionMediatique a rdfs:Class ;
+    rdfs:label "ProductionMediatique" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:Physique a rdfs:Class ;
-    rdfs:label "Physique" ;
+ff:MembresProduction a rdfs:Class ;
+    rdfs:label "MembresProduction" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:Rapport a rdfs:Class ;
-    rdfs:label "Rapport" ;
+ff:AcafanChercheur a rdfs:Class ;
+    rdfs:label "AcafanChercheur" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:Archetype a rdfs:Class ;
-    rdfs:label "Archetype" ;
+ff:Lecteur a rdfs:Class ;
+    rdfs:label "Lecteur" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-
-ff:Concept a rdfs:Class ;
-    rdfs:label "Concept" ;
+ff:Auteur a rdfs:Class ;
+    rdfs:label "Auteur" ;
     rdfs:domain o:Resource ;
-    owl:sameAs skos:Concept;
+    vs:term_status "experimental" .
+
+ff:Benevole a rdfs:Class ;
+    rdfs:label "Benevole" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:Comite_OTW a rdfs:Class ;
+    rdfs:label "Comite_OTW" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:CorpusEtendu a rdfs:Class ;
+    rdfs:label "CorpusEtendu" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ff:CorpusRestreint a rdfs:Class ;
+    rdfs:label "CorpusRestreint" ;
+    rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
 ff:x a rdf:Property ;
@@ -122,23 +140,23 @@ ff:hasRapport a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:hasCrible a rdf:Property ;
-    rdfs:label "a comme crible" ;
+ff:hasUtilisateur_AO3 a rdf:Property ;
+    rdfs:label "a comme Utilisateur_AO3" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:cribleLabel a rdf:Property ;
-    rdfs:label "cribleLabel" ;
+ff:Utilisateur_AO3Label a rdf:Property ;
+    rdfs:label "Utilisateur_AO3Label" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:cribleId a rdf:Property ;
-    rdfs:label "cribleId" ;
+ff:Utilisateur_AO3Id a rdf:Property ;
+    rdfs:label "Utilisateur_AO3Id" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:cribleRatingValue a rdf:Property ;
-    rdfs:label "cribleRatingValue" ;
+ff:Utilisateur_AO3RatingValue a rdf:Property ;
+    rdfs:label "Utilisateur_AO3RatingValue" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
@@ -152,12 +170,12 @@ ff:distanceConcept a rdf:Property ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:ordreCrible a rdf:Property ;
-    rdfs:label "Ordre dans le crible" ;
+ff:ordreUtilisateur_AO3 a rdf:Property ;
+    rdfs:label "Ordre dans le Utilisateur_AO3" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-ff:hasCribleCarto a rdf:Property ;
+ff:hasArchiveOfOurOwn_AO3 a rdf:Property ;
     rdfs:label "a comme cartographie" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
