@@ -2,11 +2,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix o: <http://omeka.org/s/vocabs/o#>.
 @prefix ff: <https://github.com/uisczk/visualisation_fanfictions/ff#>.
-@prefix ma: <http://www.w3.org/ns/ma-ont#>.
-@prefix bg: <http://contextus.net/ontology/ontomedia/ext/common/being#>.
-@prefix omc: <http://contextus.net/ontology/ontomedia/core/expression#>.
-@prefix po: <http://purl.org/ontology/po/>.
-@prefix vir: <http://w3id.org/vir#>.
 
 <https://github.com/uisczk/visualisation_fanfictions/ff#> a owl:Ontology ;
     dcterms:title "Visualisation de fanfictions" .
@@ -15,16 +10,16 @@ ff:ProducteursMediatique a rdfs:Class ;
     rdfs:label "ProducteursMediatique" ;
     rdfs:domain o:Resource.
 
-ff:Utilisateur_AO3 a rdfs:Class ;
-    rdfs:label "Utilisateur_AO3" ;
-    rdfs:domain o:Resource.
-
-ff:OrganizationForTransformativeWorks_OTW a rdfs:Class ;
-    rdfs:label "OrganizationForTransformativeWorks_OTW" ;
+ff:Utilisateurice_AO3 a rdfs:Class ;
+    rdfs:label "Utilisateurice_AO3" ;
     rdfs:domain o:Resource.
 
 ff:ArchiveOfOurOwn_AO3 a rdfs:Class ;
-    rdfs:label "Cartographie d'un Utilisateur_AO3" ;
+    rdfs:label "Archive of our own AO3" ;
+    rdfs:domain o:Resource.
+
+ff:OrganizationForTransformativeWorks_OTW a rdfs:Class ;
+    rdfs:label "Organization for tranformative works OTW" ;
     rdfs:domain o:Resource.
 
 ff:Fanfictions a rdfs:Class ;
@@ -32,15 +27,15 @@ ff:Fanfictions a rdfs:Class ;
     rdfs:domain o:Resource.
 
 ff:ProductionMediatique a rdfs:Class ;
-    rdfs:label "ProductionMediatique" ;
+    rdfs:label "Production médiatique" ;
     rdfs:domain o:Resource.
 
 ff:MembresProduction a rdfs:Class ;
-    rdfs:label "MembresProduction" ;
+    rdfs:label "Membres production" ;
     rdfs:domain o:Resource.
 
 ff:AcafanChercheur a rdfs:Class ;
-    rdfs:label "AcafanChercheur" ;
+    rdfs:label "Acafan chercheur" ;
     rdfs:domain o:Resource.
 
 ff:Lecteur a rdfs:Class ;
@@ -52,37 +47,37 @@ ff:Auteur a rdfs:Class ;
     rdfs:domain o:Resource.
 
 ff:Benevole a rdfs:Class ;
-    rdfs:label "Benevole" ;
+    rdfs:label "Bénévole" ;
     rdfs:domain o:Resource.
 
 ff:Comite_OTW a rdfs:Class ;
-    rdfs:label "Comite_OTW" ;
+    rdfs:label "Comité OTW" ;
     rdfs:domain o:Resource.
 
 ff:CorpusEtendu a rdfs:Class ;
-    rdfs:label "CorpusEtendu" ;
+    rdfs:label "Corpus étendu" ;
     rdfs:domain o:Resource.
 
 ff:CorpusRestreint a rdfs:Class ;
-    rdfs:label "CorpusRestreint" ;
+    rdfs:label "Corpus restreint" ;
     rdfs:domain o:Resource.
 
-ff:y a rdf:Property ;
-    rdfs:label "y" ;
+ff:Produire a rdf:Property ;
+    rdfs:label "Produire" ;
     rdfs:domain o:Resource.
 
-ff:y a rdf:Property ;
-    rdfs:label "y" ;
+ff:OntDroitsAuteur a rdf:Property ;
+    rdfs:label "Ont des droits d'auteur" ;
     rdfs:domain o:Resource.
 
-ff:y a rdf:Property ;
-    rdfs:label "y" ;
+ff:Pseudonyme a rdf:Property ;
+    rdfs:label "Pseudonyme" ;
     rdfs:domain o:Resource.
 
-ff:y a rdf:Property ;
-    rdfs:label "y" ;
+ff:Langue a rdf:Property ;
+    rdfs:label "Langue" ;
     rdfs:domain o:Resource.
 
-ff:y a rdf:Property ;
-    rdfs:label "y" ;
+ff:AffiliationAcademique a rdf:Property ;
+    rdfs:label "Affiliation académique" ;
     rdfs:domain o:Resource.
